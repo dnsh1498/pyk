@@ -1,0 +1,131 @@
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --color-pink:rgba(244, 91, 150, 1);
+  --color-black: rgba(44, 40, 40, 1);
+  --color-white:rgba(244, 244, 242, 1);
+  --color-back-popup:rgba(44, 40, 40, 0.6);
+  --color-black-opacity:rgba(44, 40, 40, 0.5);
+  --font-size-16:16px;
+  --font-size-32:32px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'PF Beau Sans Pro Thin Italic', sans-serif !important;
+  background: #fff;
+  color: #333;
+}
+
+body {
+  background: linear-gradient(-25deg, #ed193b, #a98055, #f286e2, #681d7a);
+  background-size: 100% 100%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  width: 100%;
+}
+ 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section {
+    padding: 80px 0;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.content_center{
+  position: relative;
+  display:flex;
+  align-items: center;
+    height: 100%;
+  justify-content: center;
+}
+
+.password{
+  height: max-content;
+  width: max-content;
+    min-width: 320px;
+}
+
+.password h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.input_password input {
+    width: 100%;
+    height: 48px;
+    padding: 4px 10px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.content_center.active .password{
+  animation: fade-out 0.3s ease;
+  display: none;
+}
+
+.text_content {
+    display: none;
+    text-align: center;
+}
+
+.text_content h3{
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.text_content p {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.text_content img {
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+
+.content_center.active .text_content{
+  display: block;
+  animation: fade-in 0.6s ease;
+}
