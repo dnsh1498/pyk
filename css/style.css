@@ -140,7 +140,7 @@ section {
   }
 
   input#myInput {
-      max-width: 320px;
+      max-width: 300px;
       /* margin: 0 auto; */
   }
 }
