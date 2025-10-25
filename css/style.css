@@ -124,6 +124,9 @@ section {
     margin: 20px auto;
 }
 
+.input_password {
+    box-shadow: 0px 0px 20px 1px #534040;
+}
 
 .content_center.active .text_content{
   display: block;
