@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Приглашение для Анастасии</title>
+  
+
+  <link rel="stylesheet" href="fonts/PFBeauSansPro/stylesheet.css">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="content">
+
+    <div class="content_center">
+      
+      <div class="password">
+        <h3>Анастасия, нужно ввести пароль</h3>
+        <div class="input_password">
+          <input type="text" name="password" id="myInput" placeholder="(знакомое слово из 3 букв)">
+        </div>
+      </div>
+
+      <div class="text_content">
+        <h3>
+          Это приглашение на ужин!
+        </h3>
+        <p>
+          Приглашаю тебя в Сахли, время ты выбираешь сама. Буду ждать!
+        </p>
+        <img src="image.jpg">
+      </div>
+
+    </div>
+    
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#myInput").on("input", function() {
+          // Получаем введённый текст и приводим к нижнему регистру
+          let text = $(this).val().toLowerCase();
+
+          // Проверяем совпадение со словом "пук"
+          if (text === "пук") {
+              $(".content_center").addClass("active"); 
+          }
+      });
+  });
+  </script>
+
+
+</body>
+</html>
